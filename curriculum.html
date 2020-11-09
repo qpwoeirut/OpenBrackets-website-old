@@ -1,118 +1,243 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OpenBrackets</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="general.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h6 style="float: right;"> Contact us at <a href="mailto:openbracketscoding@gmail.com">openbracketscoding@gmail.com</a>
-</h6>
-<img src="OpenBracketLogoTransparent.PNG" align = "left" width="150" height="150" >
-<h1> OpenBrackets</h1>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mission.html">Mission</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="curriculum.html">Curriculum<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
 
-        </ul>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="OpenBracketsLogo.jpg" height=100, width=100> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="mission.html">Mission</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="curriculum.html">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credits.html">Acknowledgements</a>
+                </li>
+
+
+            </ul>
+        </div>
     </div>
+
 </nav>
 
-<div class="media">
-    <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
-         class="align-self-center mr-3" height="150px" width="150px">
-    <div class="media-body">
-        <h5 class="mt-0">Lesson 1: Intro to Python</h5>
-        <p>October 12 | <a href="https://docs.google.com/presentation/d/1Flq_bK7ECxGIe0OPPMHyZGb7QUOsH7DEjhJNCRegp5A">Slides</a>
-        </p>
-        <p>Students will learn what a computer programming language is, why learning Python is worthwhile, and touch
-            upon basic syntax in Python. Print statements, math operations, variables, and types will all be covered in
-            this lesson. By the end of Lesson 1, students will be able to print a random number.
-        </p>
-        <br>
+<div class="page-container">
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4"> Curriculum</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
 
-        <h5 class="mt-0">Lesson 2: Conditionals and Logic</h5>
-        <p>October 16 | <a href="https://docs.google.com/presentation/d/1qNquF7YYqJPXn6I9OQYpVLYbisnomBg8-G9FE8hdw0A">Slides</a>
-        </p>
-        <p> Students will learn about if statements, else statements, and elif statements. They will also learn the
-            meaning of "and" and "or" in computer logic. By the end of Lesson 2, students will have a completed Rock,
-            Paper, Scissors game.
-        </p>
-        <br>
+    <div class="media">
 
-        <h5 class="mt-0">Lesson 3: Loops</h5>
-        <p>October 19 | <a href="https://docs.google.com/presentation/d/16t2-2sT5uoUAwWCJc_fpUeh3bTkrtyM335pifsGzPFY">Slides</a>
-        </p>
-        <p> Students will learn about for and while loops and the logic behind both. They will practice using both in
-            applicable settings, and by the end of Lesson 3, will have a complete Random Number Guessing game that they
-            can play against the computer.
-        </p>
-        <br>
+        <div class="media-body">
+            <br>
+            <h2>Python Game Design (grades 5-12)</h2>
+            <br>
 
-        <h5 class="mt-0">Lesson 4: Methods and Classes</h5>
-        <p>October 23 | <a href="https://docs.google.com/presentation/d/1CdLDwgxxKFU-ESyK6UhldIFXrz-L0rgCKstPv6AGWMM">Slides</a>
-        </p>
-        <p> Students will learn about the anatomy of methods and classes, and practice writing their own of each. They
-            will learn what parameters and method calls are, and by the end of Lesson 5, they will have a completed
-            MadLib Generator.
-        </p>
-        <br>
+            <h5 class="mt-0">Lesson 1: Intro to Python</h5>
+            <p>October 12 | <a
+                    href="https://docs.google.com/presentation/d/1Flq_bK7ECxGIe0OPPMHyZGb7QUOsH7DEjhJNCRegp5A">Slides</a>
+            </p>
+            <p>Students will learn what a computer programming language is, why learning Python is worthwhile, and touch
+                upon basic syntax in Python. Print statements, math operations, variables, and types will all be covered
+                in
+                this lesson. By the end of Lesson 1, students will be able to print a random number.
+            </p>
+            <br>
 
-        <h5 class="mt-0">Lesson 5: Lists and Dictionaries</h5>
-        <p>October 26 | <a href="https://docs.google.com/presentation/d/1XI_pfq_w-hzEm3oM2fFoYI7LHkclQy3rvOQB5SvL8uc">Slides</a>
-        </p>
-        <p> Students will learn about what lists in Python, as well as its applications. To see a real application of
-            lists, as well as the methods that can be performed on lists, students will practice making grocery lists.
-        </p>
-        <br>
+            <h5 class="mt-0">Lesson 2: Conditionals and Logic</h5>
+            <p>October 16 | <a
+                    href="https://docs.google.com/presentation/d/1qNquF7YYqJPXn6I9OQYpVLYbisnomBg8-G9FE8hdw0A">Slides</a>
+            </p>
+            <p> Students will learn about if statements, else statements, and elif statements. They will also learn the
+                meaning of "and" and "or" in computer logic. By the end of Lesson 2, students will have a completed
+                Rock,
+                Paper, Scissors game.
+            </p>
+            <br>
 
-        <h5 class="mt-0">Lesson 6: 2D Lists and Dictionaries</h5>
-        <p>October 30 | <a href="https://docs.google.com/presentation/d/13rlfQ1F8OyM8IFx1uuLksoz5l9oyhe_Mxgj-4mi_bkY/edit?usp=sharing">Slides</a>
-        </p>
-        <p> Students will learn how 2D list and dictionaries can be utilized as Python structures. By the end of Lesson 6, 
-            they will have a solid foundation in lists, traversing lists, and dictionaries, as well as a house built using a dictionary.
-        </p>
-        <br>
+            <h5 class="mt-0">Lesson 3: Loops</h5>
+            <p>October 19 | <a
+                    href="https://docs.google.com/presentation/d/16t2-2sT5uoUAwWCJc_fpUeh3bTkrtyM335pifsGzPFY">Slides</a>
+            </p>
+            <p> Students will learn about for and while loops and the logic behind both. They will practice using both
+                in
+                applicable settings, and by the end of Lesson 3, will have a complete Random Number Guessing game that
+                they
+                can play against the computer.
+            </p>
+            <br>
 
-        <h5 class="mt-0">Final Project</h5>
-        <p>November 2</p>
-        <p> After students have progressed through the first 6 lessons, they will be guided through creating their own
-            game: Treasure Hunter. Much like battleship, players must find 3 gold nuggets on a 5 by 5 grid before their
-            turns are up. This project utilizes a little bit of every lesson, and will allow students to walk away with
-            a concrete game they created themselves.
-        </p>
-        <p>
-            An example of Treasure Hunter can be played <a href="https://repl.it/@AndrewLi27/Treasure-Hunter#main.py">here</a>.
-        </p>
+            <h5 class="mt-0">Lesson 4: Methods and Classes</h5>
+            <p>October 23 | <a
+                    href="https://docs.google.com/presentation/d/1CdLDwgxxKFU-ESyK6UhldIFXrz-L0rgCKstPv6AGWMM">Slides</a>
+            </p>
+            <p> Students will learn about the anatomy of methods and classes, and practice writing their own of each.
+                They
+                will learn what parameters and method calls are, and by the end of Lesson 5, they will have a completed
+                MadLib Generator.
+            </p>
+            <br>
 
+            <h5 class="mt-0">Lesson 5: Lists</h5>
+            <p>October 26 | <a
+                    href="https://docs.google.com/presentation/d/1XI_pfq_w-hzEm3oM2fFoYI7LHkclQy3rvOQB5SvL8uc">Slides</a>
+            </p>
+            <p> Students will learn about what lists in Python, as well as its applications. To see a real application
+                of
+                lists, as well as the methods that can be performed on lists, students will practice making grocery
+                lists.
+            </p>
+            <br>
+
+            <h5 class="mt-0">Lesson 6: 2D Lists and Dictionaries</h5>
+            <p>October 30 | <a
+                    href="https://docs.google.com/presentation/d/13rlfQ1F8OyM8IFx1uuLksoz5l9oyhe_Mxgj-4mi_bkY/edit?usp=sharing">Slides</a>
+            </p>
+            <p> Students will learn how 2D list and dictionaries can be utilized as Python structures. By the end of
+                Lesson
+                6,
+                they will have a solid foundation in lists, traversing lists, and dictionaries, as well as a house built
+                using a dictionary.
+            </p>
+            <br>
+
+            <h5 class="mt-0">Final Project</h5>
+            <p>November 2</p>
+            <p> After students have progressed through the first 6 lessons, they will be guided through creating their
+                own
+                game: <a href="https://repl.it/@AndrewLi27/Treasure-Hunter#main.py">Treasure Hunter</a>. Much like
+                battleship, players must find 3 gold nuggets on a 5 by 5 grid before their
+                turns are up. This project utilizes a little bit of every lesson, and will allow students to walk away
+                with
+                a concrete game they created themselves.
+            </p>
+
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="media">
+
+        <div class="media-body">
+            <br>
+            <h2>Game Design Junior's (grades K-4)</h2>
+            <br>
+
+            <h5 class="mt-0">Lesson 1: Intro to Coding</h5>
+            <p>October 12 | <a
+                    href="https://docs.google.com/presentation/d/1THpG9ev0Eg2wV9nsnzl8Ue8Z7izIpRKAXCS8pJzsBUQ/edit?usp=sharing">Slides</a>
+            </p>
+            <p>SStudents will learn what coding is, its real life implications, and familiarize themselves with Scratch,
+                a
+                block-based programming language
+
+            </p>
+            <br>
+
+
+            <h5 class="mt-0">Lesson 2: Exploring Scratch</h5>
+            <p>October 16 | <a
+                    href="https://docs.google.com/presentation/d/18Ginfhz9ygsoBBB0U-gVOgWVZyAOv9tCug8RpwyyDSc/edit?usp=sharing">Slides</a>
+            </p>
+            <p> Students will learn about the different programming languages used in game design and app development.
+                While
+                on Scratch, they will explore implementing Sprites (characters) and utilizing various blocks as they
+                create
+                their first interactive program
+
+            </p>
+            <br>
+
+
+            <h5 class="mt-0">Lesson 3: Time Traveler Project</h5>
+            <p>October 23 | <a
+                    href="https://docs.google.com/presentation/d/1Jx8Tl-Bab4JIQy7iWznKYhLT90nMgLr4wjPnP-cf79k/edit?usp=sharing">Slides</a>
+            </p>
+            <p> Students will create a Time Traveler project, learning how to use the coordinate grid, if then
+                statements,
+                and forever loops.
+
+            </p>
+            <br>
+
+            <h5 class="mt-0">Lesson 4: Maze Project</h5>
+            <p>October 30 | <a
+                    href="https://docs.google.com/presentation/d/1WoXbu0C6TO5Fnvvhp_XEJ6fUoaXFyVDkVTBksN0b8vo/edit?usp=sharing">Slides</a>
+            </p>
+            <p> Students will create an interactive maze within Scratch, learning how to implement sensing blocks and
+                gaining exposure to Scratch backgrounds.
+            </p>
+            <br>
+
+            <h5 class="mt-0">Lesson 5: Whack-A-Mole Project</h5>
+            <p>November 6 | <a
+                    href="https://docs.google.com/presentation/d/1NqqqZBpgBXVoG6WKcH8H8FgriKYmm5Q57GixUgkb_30/edit?usp=sharing">Slides</a>
+            </p>
+            <p> Students will learn how to create their own variables within Scratch and utilize random blocks as they
+                develop the whack-a-mole arcade game.
+            </p>
+            <br>
+
+            <h5 class="mt-0">Scratch Games</h5>
+            <p>You can find some of the games completed in Game Development Juniors here:</p>
+
+
+            <p>
+            <div class="container scratch-games">
+                <iframe src="https://scratch.mit.edu/projects/438497365/embed" allowtransparency="true" width="485"
+                        height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+            </div>
+
+            <p>
+
+            <div class="container scratch-game">
+                <iframe src="https://scratch.mit.edu/projects/440654072/embed" allowtransparency="true" width="485"
+                        height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+
+            </div>
+
+        </div>
     </div>
 </div>
+
+
 </body>
+</html>

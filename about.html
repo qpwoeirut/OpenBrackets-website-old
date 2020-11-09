@@ -1,164 +1,270 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OpenBrackets</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="general.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-
-    <style>
-        img.profile {
-            float: left;
-            width: 110px;
-            margin-right: 0.8em;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h6 style="float: right;"> Contact us at <a href="mailto:openbracketscoding@gmail.com">openbracketscoding@gmail.com</a></h6>
-<img src="OpenBracketLogoTransparent.PNG" align = "left" width="150" height="150" >
-<h1> OpenBrackets</h1>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mission.html">Mission</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="curriculum.html">Curriculum</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="OpenBracketsLogo.jpg" height=100, width=100> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mission.html">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curriculum.html">Curriculum</a>
+                </li>
 
-        </ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credits.html">Acknowledgements</a>
+                </li>
+
+
+            </ul>
+        </div>
     </div>
+
 </nav>
 
-<h4>Our Inspiration & Mission:</h4>
-<p> With the recent attention towards the Black Lives Matter movement in May, we at OpenBrackets wanted to directly
-    contribute to change we could make, locally. After hearing one of our founders, Nan, speak about bringing STEM
-    support to kids who do not have access to it at home, OpenBrackets was born. We are a group of members of the Palo
-    Alto community, representing different ages and backgrounds. At OpenBrackets, we want to help bridge the digital
-    divide. Through our course offerings, we encourage kids all over the Bay to consider tech as a career.
-</p>
-<br>
-<h4> Our Teaching Staff:</h4>
-<img src="trisha.jpg" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Trisha Razdan</h5>
-    <p>Trisha Razdan is currently a senior at Palo Alto High School. She has experience in Java, Ruby, and Python from
-        taking AP Computer Science in school, as well as an Intermediate Game Design course previously. Last year, she
-        created a website for the LEMO Foundation's Playmakers initiative to allow for outside sponsorship to support
-        more kids. In her free time, she plays volleyball and binges The Office. Trisha has been around tech her whole
-        life and hopes to bring that exposure to more kids from the Bay.
-    </p>
-</div>
-<br><br>
+<div class="page-container">
+    <!-- Title for Team Cards -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4"> Meet the Team</h1>
 
-<img src="andrew.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Andrew Li</h5>
-    <p> Andrew Li is currently a senior at Palo Alto High School. He has experience in Python and Java and has taken
-        the AP Computer Science, as well as Functional and Object Oriented Programming. He has created a machine
-        learning project which aims to predict the results of the annual collegiate basketball March Madness
-        tournament and is mentored by a computer scientist with a Stanford Ph.D. Andrew likes to spend his free time
-        playing basketball and tutoring others, which drove him to join OpenBrackets.
-    </p>
-</div>
-<br><br>
 
-<img src="katie.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Katherine Cheng</h5>
-    <p> Katherine Cheng is currently a senior at Palo Alto High School. She has experience in Java through her
-        AP Computer Science at school, and has taught beginning game development to elementary and middle school
-        students. Through tutoring and working with several nonprofit organizations dedicated to helping low
-        income students in the Bay Area, Katherine is always looking to help out members of the community. In
-        her free time, she enjoys discovering new trails to run at with her family and friends.
-    </p>
-</div>
-<br><br>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- Cards for Teams -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="trisha.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title"> Trisha Razdan</h4>
+                        <p class="card-text"> Trisha Razdan is currently a senior at Palo Alto High School. She has
+                            experience in Java, Ruby, and Python from
+                            taking AP Computer Science in school, as well as other computer science courses previously.
+                            Last
+                            year, she
+                            created a website for the LEMO Foundation's Playmakers initiative to allow for outside
+                            sponsorship to support
+                            more kids. In her free time, she plays volleyball and binges The Office. Trisha has been
+                            around
+                            tech her whole
+                            life and hopes to bring that exposure to more kids from the Bay.</p>
+                        <a href="https://www.linkedin.com/in/trisha-razdan-8023881b0/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-<img src="stanley.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Stanley Zhong</h5>
-    <p> Stanley Zhong is a sophomore at Gunn High School. He is well-versed in C++ and Python, and is also
-        familiar with Java, HTML, CSS, JavaScript, COBOL, and Scheme. Most of his knowledge is self-taught
-        through collaborative projects. Last summer he built a rudimentary website of games with one of his
-        friends. He is also ranked in the top 150 in the US on the competitive programming website
-        Codeforces. As someone who was lucky enough to be introduced to programming at a young age, Stanley
-        hopes to help other kids learn and benefit from programming.
-    </p>
-</div>
-<br><br>
 
-<img src="thomas.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Thomas McGall</h5>
-    <p> Thomas McGall is a senior at Palo Alto High School. He has experience with Python, Java and
-        Javascript. He is the Lead Director of PalyHacks, a Palo Alto based hackathon and has
-        collaborated with Palantir, Balsamiq and other industry leaders to bring educational
-        opportunities to high schoolers in the Bay Area. Thomas believes in learning through creation
-        and wants to help other students discover computer science using this philosophy.
-    </p>
-</div>
-<br><br><br>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="andrew.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Andrew Li</h4>
+                        <p class="card-text"> Andrew Li is currently a senior at Palo Alto High School. He has
+                            experience in
+                            Python and Java and has taken
+                            the AP Computer Science, as well as Functional and Object Oriented Programming. He has
+                            created a
+                            machine
+                            learning project which aims to predict the results of the annual collegiate basketball March
+                            Madness
+                            tournament and is mentored by a computer scientist with a Stanford Ph.D. Andrew likes to
+                            spend
+                            his free time
+                            playing basketball and tutoring others, which drove him to join OpenBrackets.</p>
+                        <a href="https://www.linkedin.com/in/andrew-li-b5969b18a/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-<h4> Our Mentors:</h4>
-<img src="nan.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Nan Zhong</h5>
-    <p>Nan Zhong is currently a Software Engineering Manager at Google. Previously he co-founded two
-        startups, created the #1 ranked communication app on Android (featured by Fortune and
-        Amazing Android Apps for Dummies), and raised $10M in venture funding. Before that, he led
-        the team that built AWS's Elastic Load Balancing service. He holds a Master's degree in
-        Computer Science from the University of Illinois at Urbana-Champaign. He is a passionate
-        believer of using education to promote equality.</p>
-</div>
-<br><br>
+            <div class="col-md-4 align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="stanley.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Stanley Zhong</h4>
+                        <p class="card-text"> Stanley Zhong is a sophomore at Gunn High School. He is well-versed in C++
+                            and
+                            Python, and is also
+                            familiar with Java, HTML, CSS, JavaScript, COBOL, and Scheme. Most of his knowledge is
+                            self-taught
+                            through collaborative projects. Last summer he built a rudimentary website of games with one
+                            of
+                            his
+                            friends. He is also ranked in the top 150 in the US on the competitive programming website
+                            Codeforces. As someone who was lucky enough to be introduced to programming at a young age,
+                            Stanley
+                            hopes to help other kids learn and benefit from programming.</p>
+                        <a href="https://www.linkedin.com/in/stanley-zhong-277440186/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="katie.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Katherine Cheng</h4>
+                        <p class="card-text"> Katherine Cheng is currently a senior at Palo Alto High School. She has
+                            experience in Java through her
+                            AP Computer Science at school, and has taught beginning game development to elementary and
+                            middle school
+                            students. Through tutoring and working with several nonprofit organizations dedicated to
+                            helping
+                            low
+                            income students in the Bay Area, Katherine is always looking to help out members of the
+                            community. In
+                            her free time, she enjoys discovering new trails to run at with her family and friends.</p>
+                        <a href="https://www.linkedin.com/in/katherine-cheng-9708081aa/"
+                           class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-<img src="rachel.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Rachel Gollub</h5>
-    <p>Rachel Gollub is Vice President of Benefitter Technology at UnitedHealthcare. She has
-        founded a number of startups (including co-founding Benefitter), and has also worked in
-        engineering at Stanford University and Sun Microsystems. She has degrees in computer
-        science and Russian literature from Caltech, and a M.A. in military history from
-        American Military University. Rachel is an advocate for inclusion and equity in
-        education and hiring.</p>
-</div>
-<br><br>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="thomas.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Thomas McGall</h4>
+                        <p class="card-text"> Thomas McGall is a senior at Palo Alto High School. He has experience with
+                            Python, Java and
+                            Javascript. He is the Lead Director of PalyHacks, a Palo Alto based hackathon and has
+                            collaborated with Palantir, Balsamiq and other industry leaders to bring educational
+                            opportunities to high schoolers in the Bay Area. Thomas believes in learning through
+                            creation
+                            and wants to help other students discover computer science using this philosophy.</p>
+                        <a href="https://www.linkedin.com/in/thomas-mcgall-635422160/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
 
-<img src="masa.png" class="profile">
-<div class="media-body">
-    <h5 class="mt-0">Masatoshi Tanida</h5>
-    <p>Masatoshi Tanida is a software engineer with over a decade of Industry experience in
-        a variety of domains, including Scientific Computing, Wireless, Health, and
-        Automotive, and he is currently employed as a software engineer at an Autonomous
-        Vehicle startup. He holds a B.S. and M.S. in computer science from UC San Diego.
-        Masatoshi believes that high quality education should be available to students of
-        all income levels and backgrounds.</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Title for Mentor Cards -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4"> Our Advisors </h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="nan.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Nan Zhong</h4>
+                        <p class="card-text"> Nan Zhong is currently a Software Engineering Manager at Google.
+                            Previously he
+                            co-founded two
+                            startups, created the #1 ranked communication app on Android (featured by Fortune and
+                            Amazing Android Apps for Dummies), and raised $10M in venture funding. Before that, he led
+                            the team that built AWS's Elastic Load Balancing service. He holds a Master's degree in
+                            Computer Science from the University of Illinois at Urbana-Champaign. He is a passionate
+                            believer of using education to promote equality.</p>
+                        <a href="https://www.linkedin.com/in/nanzhong/" class="btn btn-outline-secondary"
+                           target="_blank">
+                            LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="masa.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Masatoshi Tanida</h4>
+                        <p class="card-text"> Masatoshi Tanida is a software engineer with over a decade of Industry
+                            experience in
+                            a variety of domains, including Scientific Computing, Wireless, Health, and
+                            Automotive, and he is currently employed as a software engineer at an Autonomous
+                            Vehicle startup. He holds a B.S. and M.S. in computer science from UC San Diego.
+                            Masatoshi believes that high quality education should be available to students of
+                            all income levels and backgrounds.</p>
+                        <a href="https://www.linkedin.com/in/masatoshi-tanida/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="rachel.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Rachel Gollub</h4>
+                        <p class="card-text"> Rachel Gollub is Vice President of Benefitter Technology at
+                            UnitedHealthcare.
+                            She has
+                            founded a number of startups (including co-founding Benefitter), and has also worked in
+                            engineering at Stanford University and Sun Microsystems. She has degrees in computer
+                            science and Russian literature from Caltech, and a M.A. in military history from
+                            American Military University. Rachel is an advocate for inclusion and equity in
+                            education and hiring.</p>
+                        <a href="https://www.linkedin.com/in/rachelgollub/" class="btn btn-outline-secondary"
+                           target="_blank"> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <img class="card-img-top" src="raj.png">
+                    <div class="card-body">
+                        <h4 class="card-title"> Rajesh Razdan</h4>
+                        <p class="card-text"> Rajesh is software product executive with a passion for improving
+                            healthcare,
+                            closing the digital divide and helping usher diversity in the technology industry. Rajesh
+                            earned
+                            his bachelors degree in computer science and engineering from Mysore University in India and
+                            currently serves as VP of product at Castlight Health. </p>
+                        <a href="https://www.linkedin.com/in/rajrazdan/" class="btn btn-outline-secondary"
+                           target="_blank">
+                            LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<br>
+
 </body>
 </html>
