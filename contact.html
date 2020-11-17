@@ -13,39 +13,9 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="OpenBracketsLogo.jpg" height=100, width=100> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="curriculum.html">Curriculum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="credits.html">Acknowledgements</a>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
+<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+<!--    This will be filled by jQuery-->
 </nav>
-<br>
-
 
 <div class="page-container">
     <div class="container-fluid padding">
@@ -64,6 +34,7 @@
         </div>
     </div>
 </div>
-
 </body>
+<script src="loadNavbar.js"></script>
+<script>loadNavbar("contact");</script>
 </html>
