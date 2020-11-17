@@ -19,7 +19,9 @@ navbar {
     font-size: 1.1em !important;
 }
 
-
+.center {
+    margin: auto;
+}
 
 
 
