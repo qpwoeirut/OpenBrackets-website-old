@@ -2,8 +2,8 @@
 
 html, body {
     height: 100%;
-    widows: 100%;
-    font-family: : 'Poppins', sans-serif;;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
     color: #222
 }
 
@@ -22,10 +22,6 @@ navbar {
 .center {
     margin: auto;
 }
-
-
-
-
 
 
 
@@ -93,13 +89,12 @@ figure {
 } */
 
 div.page-container {
-    margin: 1em 2em 2em 2em;
+    margin-top: 1em;
 }
 
-/* nav {
-    margin-bottom: 2em;
-    
-} */
+nav {
+    margin-bottom: 1em;
+}
 
 
 
