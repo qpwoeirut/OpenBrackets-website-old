@@ -1,4 +1,4 @@
-function loadNavbar(pageName) {
+function loadNavbarAndFooter(pageName) {
     console.log(pageName + "-nav");
     $("nav#navbar").load("/OpenBracketsWebsite/navbar.html", function() {
         document.getElementById(pageName + "-nav").classList.add("active");
@@ -7,4 +7,5 @@ function loadNavbar(pageName) {
             dropdownButton.classList.add("active");
         }
     });
+    $("footer#footer").load("/OpenBracketsWebsite/footer.html");
 }
