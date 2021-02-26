@@ -7,6 +7,10 @@ html, body {
     color: #222
 }
 
+nav#navbar {
+    background-color: #3697ff;
+}
+
 navbar {
     padding: .8rem;
 }
@@ -16,7 +20,13 @@ navbar {
 }
 
 .nav-link {
+    cursor: pointer;
     font-size: 1.1em !important;
+    background-color: transparent;
+    border: none;
+}
+.dropdown-item {
+    cursor: pointer;
 }
 
 .center {
