@@ -9,8 +9,8 @@ import shutil
 
 
 DEBUG = True
-OLD_DIR = "/OpenBracketsWebsite/"
-NEW_DIR = "/OpenBracketsWebsite/build/" if DEBUG else '/'
+OLD_DIR = "/OpenBrackets-website/"
+NEW_DIR = "/OpenBrackets-website/build/" if DEBUG else '/'
 
 with open("navbar.html", 'r') as file:
     navbar_html = file.read()
@@ -29,3 +29,7 @@ for directory, _, filenames in os.walk('./build'):
         text = text.replace(OLD_DIR, NEW_DIR)
         with open(html_file, 'w') as file:
             file.write(text)
+
+print("Done")
+if DEBUG:
+    print("Remember to set DEBUG to False before deploying!")
