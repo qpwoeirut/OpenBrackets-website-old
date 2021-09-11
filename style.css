@@ -13,10 +13,6 @@ nav#navbar {
     background-color: #3697ff;
 }
 
-navbar {
-    padding: .8rem;
-}
-
 .navbar-nav li {
     padding-right: 2px;
 }
