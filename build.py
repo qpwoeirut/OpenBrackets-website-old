@@ -16,7 +16,7 @@ ignored_files = shutil.ignore_patterns("build", "*.py", ".*", "README.md")
 shutil.copytree(".", "./build", ignore=ignored_files, dirs_exist_ok=True)
 
 for directory, _, filenames in os.walk('./build'):
-    html_files = [directory + '/' + fn for fn in filenames if fn.endswith('.html') or fn == "loadNavbarAndFooter.js"]
+    html_files = [directory + '/' + fn for fn in filenames if fn.endswith('.html') or fn == "setActiveNav.js"]
     for html_file in html_files:
         with open(html_file, 'r') as file:
             text = file.read()
