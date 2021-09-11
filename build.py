@@ -7,6 +7,11 @@
 import os
 import shutil
 
+with open("navbar.html", 'r') as file:
+    navbar_html = file.read().replace('"/OpenBracketsWebsite/', '"/')
+with open("footer.html", 'r') as file:
+    footer_html = file.read().replace('"/OpenBracketsWebsite/', '"/')
+
 ignored_files = shutil.ignore_patterns("build", "*.py", ".*", "README.md")
 shutil.copytree(".", "./build", ignore=ignored_files, dirs_exist_ok=True)
 
@@ -16,5 +21,6 @@ for directory, _, filenames in os.walk('./build'):
         with open(html_file, 'r') as file:
             text = file.read()
         text = text.replace('"/OpenBracketsWebsite/', '"/')
+        text = text.replace("NAVBAR PLACEHOLDER", navbar_html).replace("FOOTER PLACEHOLDER", footer_html)
         with open(html_file, 'w') as file:
             file.write(text)
