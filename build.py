@@ -12,6 +12,9 @@ DEBUG = True
 OLD_DIR = "/OpenBrackets-website/"
 NEW_DIR = "/OpenBrackets-website/build/" if DEBUG else '/'
 
+if os.path.exists("./build"):
+    shutil.rmtree("./build")
+
 with open("navbar.html", 'r') as file:
     navbar_html = file.read()
 with open("footer.html", 'r') as file:
