@@ -7,10 +7,15 @@
 import os
 import shutil
 
+
+DEBUG = True
+OLD_DIR = "/OpenBracketsWebsite/"
+NEW_DIR = "/OpenBracketsWebsite/build/" if DEBUG else '/'
+
 with open("navbar.html", 'r') as file:
-    navbar_html = file.read().replace('"/OpenBracketsWebsite/', '"/')
+    navbar_html = file.read()
 with open("footer.html", 'r') as file:
-    footer_html = file.read().replace('"/OpenBracketsWebsite/', '"/')
+    footer_html = file.read()
 
 ignored_files = shutil.ignore_patterns("build", "*.py", ".*", "README.md")
 shutil.copytree(".", "./build", ignore=ignored_files, dirs_exist_ok=True)
@@ -20,7 +25,7 @@ for directory, _, filenames in os.walk('./build'):
     for html_file in html_files:
         with open(html_file, 'r') as file:
             text = file.read()
-        text = text.replace('"/OpenBracketsWebsite/', '"/')
         text = text.replace("NAVBAR PLACEHOLDER", navbar_html).replace("FOOTER PLACEHOLDER", footer_html)
+        text = text.replace(OLD_DIR, NEW_DIR)
         with open(html_file, 'w') as file:
             file.write(text)
