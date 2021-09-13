@@ -20,7 +20,7 @@ with open("navbar.html", 'r') as file:
 with open("footer.html", 'r') as file:
     footer_html = file.read()
 
-ignored_files = shutil.ignore_patterns("build", "*.py", ".*", "README.md", "navbar.html", "footer.html")
+ignored_files = shutil.ignore_patterns("build", "*.py", ".*", "README.md", "navbar.html", "footer.html", "*0.png", "*0.jpg")
 shutil.copytree(".", "./build", ignore=ignored_files, dirs_exist_ok=True)
 
 for directory, _, filenames in os.walk('./build'):
