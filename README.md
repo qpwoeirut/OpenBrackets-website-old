@@ -1,5 +1,7 @@
 # OpenBracketsWebsite
 
+## THIS REPOSITORY IS NOW DEPRECATED. PLEASE SEE [https://github.com/qpwoeirut/OpenBrackets-website](https://github.com/qpwoeirut/OpenBrackets-website) FOR THE CURRENT VERSION OF THE WEBSITE.
+
 This repository contains the source code for [openbrackets.us](http://openbrackets.us/).
 The actual website is hosted using AWS S3.
 
